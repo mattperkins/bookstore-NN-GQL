@@ -14,7 +14,7 @@ var books = [
 ]
 
 var authors = [
-    {id:"1", age:100, name:"J. R. Tolkein"},
+    {id:"1", age:100, name:"J. R. Tolkien"},
     {id:"2", age:95, name:"George Owell"},
     {id:"3", age:100, name:"William Golding"},
     {id:"4", age:65, name:"Stephen King"}
@@ -69,7 +69,19 @@ const RootQuery = new GraphQLObjectType({
                     return _.find(authors, {
                         id: args.id
                     })
-                },
+                }
+            },
+            books: {
+                type: new GraphQLList(BookType),
+                resolve(parent, args){
+                    return books
+                }
+            },
+            authors: {
+                type: new GraphQLList(AuthorType),
+                resolve(parent, args){
+                    return authors
+                }
             }
         }
 })

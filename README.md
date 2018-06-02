@@ -22,6 +22,27 @@
 }
 ```
 
+```
+{
+  authors{
+    name
+    books{
+      title
+    }
+  }
+}
+```
+
+```
+{
+  books{
+    title
+    author{
+      age
+    }
+  }
+}
+```
 
 # DEPLOY 
 ## npm build
