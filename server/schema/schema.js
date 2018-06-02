@@ -1,7 +1,7 @@
 const graphql = require('graphql')
 const _ = require('lodash')
 const Book = require('../models/book')
-const Author = require('../models/author')
+const Author = require('../models/authors')
 
 const {GraphQLObjectType, GraphQLString, GraphQLSchema, GraphQLID, GraphQLInt, GraphQLList} = graphql
 
