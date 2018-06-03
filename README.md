@@ -44,5 +44,15 @@
 }
 ```
 
+# Example Mutation
+```
+mutation{
+  addAuthor(name: "Sandy", age:27){
+    name
+    age
+  }
+}
+```
+
 # DEPLOY 
 ## npm build
