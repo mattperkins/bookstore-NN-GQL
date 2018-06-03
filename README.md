@@ -28,6 +28,7 @@
     name
     books{
       title
+      genre
     }
   }
 }
@@ -38,6 +39,7 @@
   books{
     title
     author{
+      name
       age
     }
   }
