@@ -44,7 +44,7 @@
 }
 ```
 
-# Example Mutation
+# Example Mutations
 ```
 mutation{
   addAuthor(name: "Sandy", age:27){
@@ -53,6 +53,16 @@ mutation{
   }
 }
 ```
+
+```
+mutation{
+  addBook(title: "The Bible", genre:"History", authorId:"5b133b64998cc502f8905a6e"){
+    title
+    genre
+  }
+}
+```
+
 
 # DEPLOY 
 ## npm build
