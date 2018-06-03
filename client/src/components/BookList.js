@@ -5,7 +5,7 @@ import { graphql } from 'react-apollo'
 const getBooksQuery = gql`
     {
         books{
-            name
+            title
             id
         }
     }
@@ -14,7 +14,7 @@ const getBooksQuery = gql`
 class BookList extends React.Component {
  
   render() {
-    //   console.log(this.props)
+      console.log(this.props)
    return (
     <p>BookList</p>
 )
