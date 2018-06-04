@@ -34,7 +34,13 @@ displayAuthors(){
       e.preventDefault()
       console.log(this.state)
       console.log(this.props)
-      this.props.addBookMutationOnSubmit()
+      this.props.addBookMutationOnSubmit({
+          variables:{
+              title: this.state.title,
+              genre: this.state.genre,
+              authorId: this.state.authorId
+          }
+      })
   }
 
   render() {
