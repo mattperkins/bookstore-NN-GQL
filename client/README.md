@@ -4,3 +4,6 @@
 
 # ENDPOINTS:
 # localhost:3000
+
+# DEPLOY
+## yarn build

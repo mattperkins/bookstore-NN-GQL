@@ -2,7 +2,8 @@
 ## yarn 
 
 # RUN SERVER 
-## yarn start 
+## nodemon app.js
+
 # ENDPOINTS 
 ## localhost: 4000/graphql 
 
