@@ -68,3 +68,6 @@ mutation{
 
 # DEPLOY 
 ## npm build
+
+# DB
+## mLab
