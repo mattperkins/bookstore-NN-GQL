@@ -33,6 +33,8 @@ displayAuthors(){
   submitForm = e => {
       e.preventDefault()
       console.log(this.state)
+      console.log(this.props)
+      this.props.addBookMutationOnSubmit()
   }
 
   render() {
@@ -66,5 +68,5 @@ displayAuthors(){
 
 export default compose(
     graphql(getAuthorsQuery, { name: "getAuthorsQueryFromDataObject" }),
-    graphql(addBookMutation, { name: "addBookMutation" })
+    graphql(addBookMutation, { name: "addBookMutationOnSubmit" })
 )(AddBook)
