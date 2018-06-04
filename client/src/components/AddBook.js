@@ -16,7 +16,7 @@ class AddBook extends React.Component {
 
 
 displayAuthors(){
-    let data = this.props.getAuthorsQuery
+    let data = this.props.getAuthorsQueryFromDataObject
     if(data.loading){
       return ( 
         <option disabled>Loading Authors...</option> 
@@ -65,6 +65,6 @@ displayAuthors(){
 }
 
 export default compose(
-    graphql(getAuthorsQuery, { name: "getAuthorsQuery" }),
+    graphql(getAuthorsQuery, { name: "getAuthorsQueryFromDataObject" }),
     graphql(addBookMutation, { name: "addBookMutation" })
 )(AddBook)
