@@ -60,14 +60,16 @@ displayAuthors(){
         </div>
 
         <div className="field">
-            <label>Author:</label>
             <select onChange={ e => this.setState({ authorId: e.target.value })}>
                 <option>Select Author</option>
                 { this.displayAuthors() }
             </select>
+
+            <button><span>Add New Book</span></button>
         </div>
 
-        <button>+</button>
+        
+
    </form>
 )
 }
