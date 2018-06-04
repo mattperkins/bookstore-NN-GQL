@@ -7,7 +7,19 @@
 }
 
 /* form */
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 20vh);
+}
+div{
+  padding: 5px;
+}
 .field{
-  
+
+}
+button{
+  padding: 5px;
 }
 
