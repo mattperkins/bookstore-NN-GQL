@@ -1,25 +1,21 @@
 * {
-  margin: 0;
-  padding: 0px;
   font-family: sans-serif;
   box-sizing: border-box;
   background-color: #eee;
 }
-
-/* form */
 body{
   display: flex;
   justify-content: center;
   align-items: center;
   height: calc(100vh - 20vh);
 }
-div{
-  padding: 5px;
+ul, li{
+  list-style-type: none;
 }
+
+/* form */
 .field{
 
 }
-button{
-  padding: 5px;
-}
+
 

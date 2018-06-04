@@ -5,6 +5,16 @@ import { getAuthorsQuery } from '../queries/queries'
 
 class AddBook extends React.Component {
  
+ constructor(props) {
+ super(props)
+    this.state = {
+        title: '',
+        genre: '',
+        authorId: ''
+    }
+ }
+
+
 displayAuthors(){
     let data = this.props.data
     if(data.loading){
@@ -20,24 +30,29 @@ displayAuthors(){
     }
   }
 
+  submitForm = e => {
+      e.preventDefault()
+      console.log(this.state)
+  }
+
   render() {
     //   console.log(this.props)
    return (
-   <form id="add-book">
+   <form id="add-book" onSubmit={ this.submitForm }>
 
         <div className="field">
             <label>Book Name:</label>
-            <input type="text" />
+            <input type="text" onChange={ e => this.setState({ title: e.target.value })} />
         </div>
 
         <div className="field">
             <label>Genre:</label>
-            <input type="text" />
+            <input type="text" onChange={ e => this.setState({ genre: e.target.value })} />
         </div>
 
         <div className="field">
             <label>Author:</label>
-            <select>
+            <select onChange={ e => this.setState({ authorId: e.target.value })}>
                 <option>Select Author</option>
                 { this.displayAuthors() }
             </select>

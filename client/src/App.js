@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 import ApolloClient from 'apollo-boost'
 import { ApolloProvider } from 'react-apollo'
 
@@ -15,10 +15,10 @@ class App extends Component {
   render() {
     return (
       <ApolloProvider client={client}>
-        <div id="main">
+        <Fragment>
           <BookList />
           <AddBook />
-        </div>
+        </Fragment>
       </ApolloProvider>
     );
   }
