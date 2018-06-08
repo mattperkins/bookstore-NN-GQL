@@ -18,8 +18,6 @@ DEPLOY
 yarn build
 ```
 
-# - - - - - - - -
-
 ## SERVER
 
 ```
