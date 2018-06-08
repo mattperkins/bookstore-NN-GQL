@@ -4,13 +4,16 @@ const schema = require('./schema/schema')
 const mongoose = require('mongoose')
 const cors = require('cors')
 
+// environment variable to protect db access 
+const MLAB_URI = require('../env.js')
+
 const app = express()
 
 // allow cross origin requests (cors)
 app.use(cors())
 
 // connect to mLab
-mongoose.connect('mongodb://fred:wordpass01@ds247290.mlab.com:47290/bookstore-nn-gql')
+mongoose.connect(MLAB_URI.MLAB_URI)
 mongoose.connection.once('open', ()=>{
     console.log('connected to database')
 })
