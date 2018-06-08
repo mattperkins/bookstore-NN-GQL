@@ -1,4 +1,4 @@
-# Node, Express, GraphQL, Mongoose, React : Web App
+# GERMN Stack Web App : GraphQL, Express, React, MongoDB, Node.
 
 ## CLIENT
 
