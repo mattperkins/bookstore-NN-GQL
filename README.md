@@ -1,3 +1,21 @@
+# Node, Express, GraphQL, Mongoose, React : Web App
+
+# CLIENT
+
+# RUN
+# yarn
+# yarn start
+
+# ENDPOINTS:
+# localhost:3000
+
+# DEPLOY
+## yarn build
+
+# //////\\\\\\
+
+# SERVER
+
 # INSTALL 
 ## yarn 
 
