@@ -1,31 +1,48 @@
 # Node, Express, GraphQL, Mongoose, React : Web App
 
-# CLIENT
+## CLIENT
 
-# RUN
-# yarn
-# yarn start
+```
+RUN
+yarn
+yarn start
+```
 
-# ENDPOINTS:
-# localhost:3000
+```
+ENDPOINTS:
+localhost:3000
+```
 
-# DEPLOY
-## yarn build
+```
+DEPLOY
+yarn build
+```
 
-# //////\\\\\\
+# - - - - - - - -
 
-# SERVER
+## SERVER
 
-# INSTALL 
-## yarn 
+```
+DB
+mLab
+```
 
-# RUN SERVER 
-## nodemon app.js
+```
+INSTALL 
+yarn 
+```
 
-# ENDPOINTS 
-## localhost: 4000/graphql 
+```
+RUN SERVER 
+nodemon app.js
+```
 
-# Example query shape
+```
+ENDPOINTS 
+localhost: 4000/graphql 
+```
+
+### Example query shape
 ```
 {
   book(id:1){
@@ -65,7 +82,7 @@
 }
 ```
 
-# Example Mutations
+### Example Mutations
 ```
 mutation{
   addAuthor(name: "Sandy", age:27){
@@ -84,9 +101,7 @@ mutation{
 }
 ```
 
-
-# DEPLOY 
-## npm build
-
-# DB
-## mLab
+```
+DEPLOY 
+npm build
+```
