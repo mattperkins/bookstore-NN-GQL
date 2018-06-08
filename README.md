@@ -1,6 +1,7 @@
-# GERMN Stack Web App : GraphQL, Express, React, MongoDB, Node.
+# GERMN Stack Web App 
+## GraphQL, Express, React, MongoDB, Node.
 
-## CLIENT
+### CLIENT
 
 ```
 RUN
@@ -18,7 +19,7 @@ DEPLOY
 yarn build
 ```
 
-## SERVER
+### SERVER
 
 ```
 DB
