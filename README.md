@@ -84,7 +84,7 @@ localhost: 4000/graphql
 ### Example Mutations
 ```
 mutation{
-  addAuthor(name: "Sandy", age:27){
+  addAuthor(name: "Jesus", age:27){
     name
     age
   }
