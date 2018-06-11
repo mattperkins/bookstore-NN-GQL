@@ -1,4 +1,4 @@
-# Web App built using the GERMN Stack 
+# Web App built using :
 ## GraphQL, Express, React, MongoDB, Node.
 
 ### CLIENT
